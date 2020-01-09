@@ -1,0 +1,33 @@
+%% Huhyphn - hungarian hyphenation patterns v<%=Time.now.strftime("%Y%m%d")%>
+%%
+%% Copyright (C) 2003-2008, Bence Nagy <nagybence@tipogral.hu>
+%% This file can be distributed under the terms of the
+%% GNU General Public License version 2.
+%% 
+%% Encoding: Cork/T1/EC
+%%
+\message{Huhyphn - hungarian hyphenation patterns v<%=Time.now.strftime("%Y%m%d")%>}
+\begingroup
+\catcode`\^^e1=11\uccode`\^^e1=`\^^c1\lccode`\^^e1=`\^^e1
+\catcode`\^^c1=11\uccode`\^^c1=`\^^c1\lccode`\^^c1=`\^^e1
+\catcode`\^^e9=11\uccode`\^^e9=`\^^c9\lccode`\^^e9=`\^^e9
+\catcode`\^^c9=11\uccode`\^^c9=`\^^c9\lccode`\^^c9=`\^^e9
+\catcode`\^^f3=11\uccode`\^^f3=`\^^d3\lccode`\^^f3=`\^^f3
+\catcode`\^^d3=11\uccode`\^^d3=`\^^d3\lccode`\^^d3=`\^^f3
+\catcode`\^^f6=11\uccode`\^^f6=`\^^d6\lccode`\^^f6=`\^^f6
+\catcode`\^^d6=11\uccode`\^^d6=`\^^d6\lccode`\^^d6=`\^^f6
+\catcode`\^^ae=11\uccode`\^^ae=`\^^8e\lccode`\^^ae=`\^^ae
+\catcode`\^^8e=11\uccode`\^^8e=`\^^8e\lccode`\^^8e=`\^^ae
+\catcode`\^^fc=11\uccode`\^^fc=`\^^dc\lccode`\^^fc=`\^^fc
+\catcode`\^^dc=11\uccode`\^^dc=`\^^dc\lccode`\^^dc=`\^^fc
+\catcode`\^^fa=11\uccode`\^^fa=`\^^da\lccode`\^^fa=`\^^fa
+\catcode`\^^da=11\uccode`\^^da=`\^^da\lccode`\^^da=`\^^fa
+\catcode`\^^b6=11\uccode`\^^b6=`\^^96\lccode`\^^b6=`\^^b6
+\catcode`\^^96=11\uccode`\^^96=`\^^96\lccode`\^^96=`\^^b6
+\catcode`\^^ed=11\uccode`\^^ed=`\^^cd\lccode`\^^ed=`\^^ed
+\catcode`\^^cd=11\uccode`\^^cd=`\^^cd\lccode`\^^cd=`\^^ed
+\catcode`\^^e4=11\uccode`\^^e4=`\^^c4\lccode`\^^e4=`\^^e4
+\catcode`\^^c4=11\uccode`\^^c4=`\^^c4\lccode`\^^c4=`\^^e4
+\patterns{%
+<%= File.read('huhu.pat').gsub('õ','®').gsub('û','¶') %>}
+\endgroup
