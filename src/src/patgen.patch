@@ -1,0 +1,23 @@
+--- patgen.ch.orig	2003-02-26 12:57:11.000000000 +0100
++++ patgen.ch	2003-03-07 06:45:24.000000000 +0100
+@@ -62,6 +62,20 @@
+ @z
+ 
+ @x Increase constants.
++@!trie_size=55000; {space for pattern trie}
++@!triec_size=26000; {space for pattern count trie, must be less than
++ |trie_size| and greater than the number of occurrences of any pattern in
++ the dictionary}
++@!max_ops=4080; {size of output hash table, should be a multiple of 510}
++@y
++@!trie_size=2000000; {space for pattern trie}
++@!triec_size=2000000; {space for pattern count trie, must be less than
++ |trie_size| and greater than the number of occurrences of any pattern in
++ the dictionary}
++@!max_ops=51000; {size of output hash table, should be a multiple of 510}
++@z
++
++@x Increase constants.
+ @!max_buf_len=80; {maximum length of input lines, must be at least |max_len|}
+ @y
+ @!max_buf_len=3000; {maximum length of input lines, must be at least |max_len|}

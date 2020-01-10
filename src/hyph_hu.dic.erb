@@ -1,0 +1,8 @@
+ISO8859-2
+%% Huhyphn - hungarian hyphenation patterns v<%= Time.now.strftime('%Y%m%d') %>
+%%
+%% Copyright (C) 2003-2008, Bence Nagy <nagybence@tipogral.hu>
+%% This file can be distributed under the terms of the
+%% GNU General Public License version 2.
+%%
+<% `./substrings.pl huhu.pat hyph_hu_HU.dic.tmp` %><%= File.read('hyph_hu_HU.dic.tmp') %><% File.delete('hyph_hu_HU.dic.tmp') %>
