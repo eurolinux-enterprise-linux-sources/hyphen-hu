@@ -2,7 +2,7 @@ Name: hyphen-hu
 Summary: Hungarian hyphenation rules
 %define upstreamid 20090612
 Version: 0.%{upstreamid}
-Release: 10%{?dist}
+Release: 9%{?dist}
 Source: http://download.github.com/nagybence-huhyphn-aa3fc85.tar.gz
 Group: Applications/Text
 URL: http://www.tipogral.hu/
@@ -38,9 +38,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/hyphen/*
 
 %changelog
-* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 0.20090612-10
-- Mass rebuild 2013-12-27
-
 * Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.20090612-9
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
 
